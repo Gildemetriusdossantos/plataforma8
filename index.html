@@ -739,16 +739,19 @@
                     <form id="admin-login-form">
                         <div class="form-group">
                             <label for="admin-email">E-mail:</label>
-                            <input type="email" id="admin-email" class="form-control" value="assessoriaprojetos242@gmail.com" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="admin-password">Senha:</label>
-                    
-                            <input type="password" id="admin-password" class="form-control" value="Demetrius@8" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Entrar</button>
-                    </form>
-                </div>
+                            <input type="email" id="admin-email" class="form-control" value="assessoriaprojetos242@gmail.com" required> <div class="form-group">
+    <!-- Verifique se existe a tag <form> abrindo antes de tudo -->
+    <form action="/login" method="POST"> 
+        
+        <label for="admin-password">Senha:</label>
+        <input type="password" id="admin-password" name="password" class="form-control" value="Demetrius@8" required>
+        
+        <!-- O botão deve estar dentro do form -->
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Entrar</button>
+    
+    </form>
+</div>
+                       
             </div>
         </section>
 
@@ -1900,6 +1903,7 @@
 </body>
 
 </html>
+
 
 
 
