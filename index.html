@@ -728,28 +728,31 @@
                 <div class="demo-lessons" id="demo-lessons">
                     <!-- Aulas demo serão carregadas via JavaScript -->
                 </div>
-            </div>
+            </div><section id="admin-login-page" class="page" style="display: none;">
+    <div class="container" style="min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+        <div class="admin-section" style="max-width: 400px; width: 100%;">
+            <h2 style="text-align: center;">Área do Administrador</h2>
+            
+            <!-- Apenas UM formulário aqui -->
+            <form id="admin-login-form" action="/login" method="POST">
+                
+                <!-- Grupo do E-mail -->
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="admin-email">E-mail:</label>
+                    <input type="email" id="admin-email" name="email" class="form-control" value="assessoriaprojetos242@gmail.com" required>
+                </div>
+
+                <!-- Grupo da Senha -->
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="admin-password">Senha:</label>
+                    <input type="password" id="admin-password" name="password" class="form-control" value="Demetrius@8" required>
+                </div>
+                
+                <!-- Botão de Entrar -->
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Entrar</button>
         </section>
 
-        <!-- Página de Login Admin -->
-        <section id="admin-login-page" class="page" style="display: none;">
-            <div class="container" style="min-height: 70vh; display: flex; align-items: center; justify-content: center;">
-                <div class="admin-section" style="max-width: 400px; width: 100%;">
-                    <h2 style="text-align: center;">Área do Administrador</h2>
-                    <form id="admin-login-form">
-                        <div class="form-group">
-                            <label for="admin-email">E-mail:</label>
-                            <input type="email" id="admin-email" class="form-control" value="assessoriaprojetos242@gmail.com" required> <div class="form-group">
-    <!-- Verifique se existe a tag <form> abrindo antes de tudo -->
-    <form action="/login" method="POST"> 
-        
-        <label for="admin-password">Senha:</label>
-        <input type="password" id="admin-password" name="password" class="form-control" value="Demetrius@8" required>
-        
-        <!-- O botão deve estar dentro do form -->
-        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Entrar</button>
-    
-    </form>
+     
 </div>
                        
             </div>
@@ -1903,6 +1906,7 @@
 </body>
 
 </html>
+
 
 
 
